@@ -1,0 +1,42 @@
+Fabiana quer viajar nas férias
+ela tem um valor que economizou e quer saber se é possível viajar
+
+Crie um programa que solicite o nome do usuário,valor e viagem a qual o usuario deseja ir
+e retorne se é possível viajar e o valor que sobraria ou faltaria caso o valor na carteira seja insuficiente
+
+
+    Disney = R$ 15000
+    Madrid = R$ 12000
+    Maceió = R$ 8000
+    Ribeirão = R$ 5000
+    
+    <script>
+   
+    const usuario = prompt('Nome do usuario')
+    const valor = Number(prompt('Valor na carteira'))
+    const viagem = Number(prompt('Para onde deseja viajar? 1) Disney 2) Madrid 3) Maceió 4) Ribeirão'))
+
+    switch(viagem){
+        case 1:
+            valorviagem = 15000
+            break
+        case 2:
+            valorviagem = 12000
+            break
+        case 3: 
+            valorviagem = 8000
+            break
+        case 4:
+            valorviagem = 5000
+            break
+        
+    }
+if(valor < valorviagem){
+    alert(`Não é possível viajar falta R$ ${(valor - valorviagem )*-1}`)
+}   
+else if ( valor >= valorviagem ){
+    alert(`Você pode ir e o troco é de ${valor - valorviagem}`)
+
+}
+
+</script>
